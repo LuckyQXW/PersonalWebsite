@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-h1, li {
-  font-family: 'Rubik', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
+/*
+  Front page
+ */
 #greeting h1 {
   font-size: 100px;
   color: #800913;
@@ -17,11 +21,11 @@ li {
 }
 
 a {
-  color: #800913;
+  color: black;
 }
 
 #greeting {
-  height: 400px;
+  height: 480px;
   display: flex;
   align-items: flex-end;
 }
@@ -35,20 +39,26 @@ a {
 }
 
 #logo {
-  padding: 80px 80px 80px 0px;
-  width: 290px;
+  background-image: url("Assets/Logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 60px;
+  width: 230px;
 }
 
-#options {
-  height: 500px;
-  background-color: grey;
+#logo:hover {
+  background-image: url("Assets/ProfilePic.png");
 }
+
 
 nav {
   display: flex;
   justify-content: space-between;
   padding-left: 80px;
   padding-right: 80px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 
 nav ul {
@@ -65,4 +75,50 @@ nav li {
 
 nav li:last-child {
   margin-right: 0px;
+}
+
+
+/*
+  Options on front page
+ */
+#options {
+  height: 500px;
+  margin-top: 50px;
+}
+
+#options h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 36px;
+}
+
+#options-container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 200px 0 200px;
+}
+
+.option {
+  width: 262px;
+  height: 318px;
+  border-color: #800913;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.option h3 {
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 25px;
+  color: #800913;
+}
+
+.option img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
