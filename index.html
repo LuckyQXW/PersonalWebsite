@@ -3,23 +3,24 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
     <title>Wen Qiu</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="index.html" id="home-nav-button">Home</a></li>
         </ul>
         <ul>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#art">Artwork</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="education.html" id="education-nav-button">Education</a></li>
+          <li><a href="experience.html" id="experience-nav-button">Experience</a></li>
+          <li><a href="art.html" id="art-nav-button">Artwork</a></li>
+          <li><a href="Assets/qiu-wen-resume.pdf" id="resume-nav-button" target="_blank">Resume</a></li>
+          <li><a href="contact.html" id="contact-nav-button">Contact</a></li>
         </ul>
     </header>
-    <section id="intro">
+    <section id="home">
       <div id="greeting">
         <h1>Hello, I am Wen Qiu</h1>
       </div>
@@ -27,21 +28,27 @@
         <div id="logo">
         </div>
       </div>
-    </section>
-    <section id="options">
-      <h2>Who am I?</h2>
-      <div id="options-container">
-        <div class="option">
-          <h3>As a Student/TA</h3>
-          <img src="Assets/GraduationCapLogo.png" alt="graduation cap" />
-        </div>
-        <div class="option">
-          <h3>As a Developer</h3>
-          <img src="Assets/ComputerLogo.png" alt="computer" />
-        </div>
-        <div class="option">
-          <h3>As an Artist</h3>
-          <img src="Assets/ArtistLogo.png" alt="ipad and apple pencil" />
+      <div id="options">
+        <h2>Who am I?</h2>
+        <div id="options-container">
+          <a href="education.html">
+            <div class="option" id="student-button">
+              <h3>As a Student/TA</h3>
+              <img src="Assets/graduation-cap-logo.png" alt="graduation cap" />
+            </div>
+          </a>
+          <a href="experience.html">
+            <div class="option" id="dev-button">
+              <h3>As a Developer</h3>
+              <img src="Assets/computer-logo.png" alt="computer" />
+            </div>
+          </a>
+          <a href="art.html">
+            <div class="option" id="artist-button">
+              <h3>As an Artist</h3>
+              <img src="Assets/artist-logo.png" alt="ipad and apple pencil" />
+            </div>
+          </a>
         </div>
       </div>
     </section>
