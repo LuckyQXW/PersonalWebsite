@@ -3,24 +3,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-}
-
-/*
-  Front page
- */
-
-#greeting {
-  height: 480px;
-  display: flex;
-  align-items: flex-end;
-}
-
-#greeting h1 {
-  font-size: 100px;
-  color: #800913;
-  margin-left: 80px;
-  margin-bottom: 20px;
 }
 
 nav {
@@ -55,6 +37,22 @@ nav a {
   color: black;
 }
 
+/*
+  Front page
+ */
+#greeting {
+  height: 480px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.home h1 {
+  font-size: 100px;
+  color: #800913;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
 #logoBG {
   display: flex;
   justify-content: flex-end;
@@ -78,6 +76,11 @@ nav a {
 /*
   Options on front page
  */
+
+ .home h2, .home p, #options-container{
+   margin-left: 80px;
+ }
+
 #options {
   height: 500px;
   margin-top: 50px;
@@ -85,20 +88,22 @@ nav a {
 
 #options-container {
   display: flex;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 200px 0 200px;
+  justify-content: space-between;
+  width: 60%;
 }
 
 #options-container a {
   text-decoration: none;
 }
 
-#options h2 {
-  text-align: center;
+.home h2 {
   font-size: 40px;
   margin-bottom: 36px;
+  margin-top: 20px;
+}
+
+.home p {
+  width: 60%;
 }
 
 .option {
@@ -143,7 +148,6 @@ nav a {
   height: 500px;
   background-color: black;
 }
-
 
 #contact {
   height: 500px;
