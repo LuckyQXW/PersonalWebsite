@@ -199,6 +199,22 @@ h1 {
   opacity: 0.8;
 }
 
+#experience {
+  height: 500px;
+  background-color: white;
+}
+
+.exp-block {
+  display: flex;
+}
+
+.exp-description {
+  width: 65%;
+}
+
+.exp-description h3 {
+  margin-top: 20px;
+}
 /* ================ Ignore everything below =================== */
 /*
   Options on front page
@@ -255,11 +271,6 @@ h1 {
 
 .hidden {
   display: none;
-}
-
-#experience {
-  height: 500px;
-  background-color: black;
 }
 
 #contact {
