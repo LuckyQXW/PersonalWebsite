@@ -2,13 +2,8 @@
   "use strict";
   window.addEventListener("load", init);
   function init() {
+    let controller = new ScrollMagic.Controller();
     id("home-nav-button").addEventListener("click", changeToHomePage);
-    id("student-button").addEventListener("click", changeToStudentPage);
-    id("education-nav-button").addEventListener("click", changeToStudentPage);
-    id("dev-button").addEventListener("click", changeToDevPage);
-    id("experience-nav-button").addEventListener("click", changeToDevPage);
-    id("artist-button").addEventListener("click", changeToArtistPage);
-    id("art-nav-button").addEventListener("click", changeToArtistPage);
     let optionButtons = qsa(".option");
     for (let i = 0; i < optionButtons.length; i++) {
       optionButtons[i].addEventListener("mouseover", setOptionSelected);

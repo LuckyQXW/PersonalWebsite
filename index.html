@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="scrollmagic/uncompressed/ScrollMagic.js"></script>
     <title>Wen Qiu</title>
   </head>
   <body>
@@ -13,14 +15,14 @@
           <li><a href="index.html" id="home-nav-button">Home</a></li>
         </ul>
         <ul>
-          <li><a href="education.html" id="education-nav-button">Education</a></li>
-          <li><a href="experience.html" id="experience-nav-button">Experience</a></li>
+          <li><a href="#education" id="education-nav-button">Education</a></li>
+          <li><a href="#experience" id="experience-nav-button">Experience</a></li>
           <li><a href="art.html" id="art-nav-button">Artwork</a></li>
           <li><a href="Assets/qiu-wen-resume.pdf" id="resume-nav-button" target="_blank">Resume</a></li>
           <li><a href="contact.html" id="contact-nav-button">Contact</a></li>
         </ul>
     </header>
-    <section class="home">
+    <section>
       <div id="greeting">
         <h1>Hello, I am Wen Qiu</h1>
       </div>
@@ -29,37 +31,118 @@
         </div>
       </div>
     </section>
-    <section id="bio" class="home">
-      <h2>Bio</h2>
-      <p>
-        I moved from China to the U.S. in 2015 and I am currently a rising junior at the University of Washington-Seattle studying Computer Science. In school, I enjoy problem-solving and excelling in my coursework, as well as helping others to succeed through being a tutor for Math and Computer Science since my freshman year. I LOVE building things fast yet still have an attention to detail. Right now, I am seeking opportunities to expand my skillset and improve as a software engineer.
-      </p>
-      <p>
-        In my free time, I like playing and watching video games, and doing digital sketches. Sketching is my go-to way of experiencing a sense of flow and sharpening my observation skills.
-      </p>
+    <section id="intro" class="content">
+      <section id="bio">
+        <h2>Bio</h2>
+        <p>
+          I moved from China to the U.S. in 2015 and I am currently a rising junior at the University of Washington-Seattle studying Computer Science. In school, I enjoy problem-solving and excelling in my coursework, as well as helping others to succeed through being a tutor for Math and Computer Science since my freshman year. I LOVE building things fast yet still have an attention to detail. Right now, I am seeking opportunities to expand my skillset and improve as a software engineer.
+        </p>
+        <p>
+          In my free time, I like playing and watching video games, and doing digital sketches. Sketching is my go-to way of experiencing a sense of flow and sharpening my observation skills.
+        </p>
+      </section>
+      <section id="quick-links">
+        <div>
+          <h3>Learn more about me...</h3>
+          <ul>
+            <li><a href="#education">As a student</a></li>
+            <li><a href="#experience">As a developer</a></li>
+            <li><a href="#art">As an artist</a></li>
+          </ul>
+          <h3>Or check out my...</h3>
+          <ul>
+            <li><a href="Assets/qiu-wen-resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="https://github.com/LuckyQXW" target="_blank">Github</a></li>
+          </ul>
+        </div>
+      </section>
     </section>
-    <section id="options" class="home">
-      <h2>Learn more about me...</h2>
-      <div id="options-container">
-        <a href="education.html">
-          <div class="option" id="student-button">
-            <h3>As a Student/TA</h3>
-            <img src="Assets/graduation-cap-logo.png" alt="graduation cap" />
-          </div>
-        </a>
-        <a href="experience.html">
-          <div class="option" id="dev-button">
-            <h3>As a Developer</h3>
-            <img src="Assets/computer-logo.png" alt="computer" />
-          </div>
-        </a>
-        <a href="art.html">
-          <div class="option" id="artist-button">
-            <h3>As an Artist</h3>
-            <img src="Assets/artist-logo.png" alt="ipad and apple pencil" />
-          </div>
-        </a>
+    <section id="education" class="content">
+      <h2>Education</h2>
+      <div class="edu-block">
+        <img src="http://news.cs.washington.edu/wp-content/uploads/2014/05/CSElogo2_1000.png" alt="CSE logo" />
+        <div>
+          <p>Rising junior at University of Washington - Seattle (Expected graduation year: 2022)</p>
+          <p>Anticipated degree: Bachelors of Art and Science in Computer Science & Engineering</p>
+          <p>Cumulative GPA: 4.0/4.0</p>
+        </div>
       </div>
+      <div class="edu-block">
+        <img src="https://www.engr.washington.edu/files/curr_students/studentprogs/stars/imgs/stars-logo190x.gif" alt="STARS logo" id="stars-logo"/>
+        <p>
+          STARS Scholar: highly competitive engineering enrichment program for Washington state students from underserved high schools. STARS utilizes a holistic model to build a strong foundation in math and science to ensure success in engineering and computer science.
+        </p>
+      </div>
+      <div id="class-projects">
+        <h3>Class Projects</h3>
+        <h4>CSE 154 Web Programming</h4>
+        <div class="class-project-container">
+          <div class="class-project-thumbnail" id="linked-list-playground">
+            <div class="overlay">
+              <p>LinkedIntList Playground (interactive playground for learning linked lists)</p>
+              <p>
+                <a href="https://courses.cs.washington.edu/courses/cse154/cp/19sp/cp2/smash-ball/index.html" target="_blank">
+                  Website
+                </a>
+                /
+                <a href="https://github.com/LuckyQXW/cse154-linked-list-playground" target="_blank">
+                  Github
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="class-project-thumbnail" id="word-master">
+            <div class="overlay">
+              <p>Word Master Game <br />(word game with Webster-Merriam Dictionary API)</p>
+              <p>
+                <a href="https://courses.cs.washington.edu/courses/cse154/cp/19sp/cp3/kavik/index.html" target="_blank">
+                  Website
+                </a>
+                /
+                <a href="https://github.com/LuckyQXW/cse154-word-master-game" target="_blank">
+                  Github
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="class-project-thumbnail" id="adapted-toy-inventory">
+            <div class="overlay">
+              <p>Adapted Toy Inventory (website for exploring adapted toys available at HuskyADAPT)</p>
+              <p>
+                <a href="https://students.washington.edu/wenq97/adapted-toy-inventory/adapted-toy-inventory.html" target="_blank">
+                  Website
+                </a>
+                /
+                <a href="https://github.com/LuckyQXW/adapted-toy-inventory" target="_blank">
+                  Github
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4>CSE 164 Intermediate Data Programming</h4>
+        <div class="class-project-container">
+          <div class="class-project-thumbnail" id="kickstarter">
+            <div class="overlay">
+              <p>kickstarter Data Analysis (investigating trends behind Kickstarter platform)</p>
+                <a href="https://github.com/LuckyQXW/cse163-kickstarter-analysis" target="_blank">
+                  Github
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="teaching">
+        <h3>Teaching</h3>
+        <ul>
+          <li>Incoming CSE 14X TA (Fall 2019)</li>
+          <li>CSE 190Z STARS CSE 143 Workshop TA (Spring 2019)</li>
+          <li>STARS Math Academic Mentor (Fall 2018)</li>
+          <li>STARS Math Student Assistant (Fall 2017 - Spring 2018)</li>
+      </div>
+    </section>
+    <section id="experience">
     </section>
   </body>
 </html>

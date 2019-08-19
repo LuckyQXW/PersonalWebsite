@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -14,11 +18,13 @@ nav {
   width: 100%;
   background-color: white;
   top: 0px;
+  height: 50px;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0px;
   padding: 0px;
 }
@@ -46,7 +52,7 @@ nav a {
   align-items: flex-end;
 }
 
-.home h1 {
+h1 {
   font-size: 100px;
   color: #800913;
   margin-left: 80px;
@@ -73,13 +79,130 @@ nav a {
   background-image: url("Assets/logo.png");
 }
 
+#intro {
+  display: flex;
+}
+
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #800913;
+}
+
+.content h3 {
+  font-size: 25px;
+}
+
+.content h4 {
+  font-size: 18px;
+}
+
+#bio {
+  width: 60%;
+}
+
+#quick-links {
+  margin-left: 80px;
+  padding-left: 20px;
+  border-width: 0 0 0 5px;
+  border-style: solid;
+  border-color: #800913;
+}
+
+#quick-links div {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.content {
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#education {
+  background-color: rgb(209,210,218);
+}
+
+.edu-block {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.edu-block img {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+.edu-block p {
+  margin-bottom: 0px;
+}
+
+#stars-logo {
+  width: 100px;
+  height: 50px;
+}
+
+.class-project-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.class-project-thumbnail {
+  width: 250px;
+  height: 140px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.class-project-thumbnail a {
+  color: white;
+}
+
+#linked-list-playground {
+  background-image: url("Assets/linked-list-playground.png");
+}
+
+#word-master {
+  background-image: url("Assets/word-master.png");
+}
+
+#adapted-toy-inventory {
+  background-image: url("Assets/adapted-toy-inventory.png");
+}
+
+#kickstarter {
+  background-image: url("https://ksr-static.imgix.net/tq0sfld-kickstarter-logo-green.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=f00262bade8a51249b7d63c8f76ce47f");
+}
+
+.class-project-thumbnail .overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.class-project-thumbnail:hover .overlay {
+  opacity: 0.8;
+}
+
+/* ================ Ignore everything below =================== */
 /*
   Options on front page
  */
 
- .home h2, .home p, #options-container{
-   margin-left: 80px;
- }
 
 #options {
   height: 500px;
@@ -97,13 +220,7 @@ nav a {
 }
 
 .home h2 {
-  font-size: 40px;
-  margin-bottom: 36px;
-  margin-top: 20px;
-}
 
-.home p {
-  width: 60%;
 }
 
 .option {
@@ -139,11 +256,6 @@ nav a {
   display: none;
 }
 
-#education {
-  height: 500px;
-  background-color: yellow;
-}
-
 #experience {
   height: 500px;
   background-color: black;
@@ -155,7 +267,6 @@ nav a {
 }
 
 .side-panel {
-  position: fixed;
   height: 100%;
   width: 200px;
   display: flex;
