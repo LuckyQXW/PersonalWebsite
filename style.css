@@ -200,7 +200,6 @@ h1 {
 }
 
 #experience {
-  height: 500px;
   background-color: white;
 }
 
@@ -215,124 +214,30 @@ h1 {
 .exp-description h3 {
   margin-top: 20px;
 }
-/* ================ Ignore everything below =================== */
-/*
-  Options on front page
- */
-
-
-#options {
-  height: 500px;
-  margin-top: 50px;
-}
-
-#options-container {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-}
-
-#options-container a {
-  text-decoration: none;
-}
-
-.home h2 {
-
-}
-
-.option {
-  width: 262px;
-  height: 318px;
-  border-color: #800913;
-  border-width: 5px;
-  border-style: solid;
-  color: #800913;
-  cursor: pointer;
-}
-
-.option h3 {
-  text-align: center;
-  margin-top: 66px;
-  margin-bottom: 25px;
-}
-
-.option img {
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.option-selected {
-  color: white;
-  background-color: #800913;
-}
-
-.hidden {
-  display: none;
-}
-
-#contact {
-  height: 500px;
-  background-color: purple;
-}
-
-.side-panel {
-  height: 100%;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-width: 0 5px 0 0;
-  border-style: solid;
-  border-color: #800913;
-}
-
-.side-panel img {
-  width: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.side-panel h1 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 #art {
-  height: 2800px;
-  margin-left: 220px;
-  color: #800913;
-}
-
-#art-container {
-  margin-top: 70px;
-}
-
-#art h2 {
-  font-size: 20px;
+  background-color: rgb(209,210,218);
 }
 
 #art h3 {
-  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
+#carousel {
+  width: 60%;
+  height: 500px;
+  margin: auto;
 }
 
-.image-container img {
-  display: block;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  height: 200px;
+.carousel-inner {
+  width: 80%;
+  margin: auto;
+}
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
-.art-block {
-  margin-bottom: 20px;
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
