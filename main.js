@@ -2,62 +2,6 @@
   "use strict";
   window.addEventListener("load", init);
   function init() {
-    let controller = new ScrollMagic.Controller();
-    id("home-nav-button").addEventListener("click", changeToHomePage);
-    let optionButtons = qsa(".option");
-    for (let i = 0; i < optionButtons.length; i++) {
-      optionButtons[i].addEventListener("mouseover", setOptionSelected);
-      optionButtons[i].addEventListener("mouseleave", setOptionUnselected);
-    }
-  }
-
-  function changeToHomePage() {
-    hideAllPages()
-    id("home").classList.remove("hidden")
-  }
-
-  function changeToStudentPage() {
-    hideAllPages()
-    id("education").classList.remove("hidden")
-  }
-
-  function changeToDevPage() {
-    hideAllPages()
-    id("experience").classList.remove("hidden")
-  }
-
-  function changeToArtistPage() {
-    hideAllPages()
-    id("artwork").classList.remove("hidden")
-  }
-
-  function changeToContactPage() {
-    hideAllPages()
-    id("contact").classList.remove("hidden")
-  }
-
-  function setOptionSelected() {
-    let img = this.children[1]
-    if (this.id === "student-button") {
-      img.src = "Assets/graduation-cap-logo-selected.png"
-    } else if (this.id === "dev-button") {
-      img.src = "Assets/computer-logo-selected.png"
-    } else if (this.id === "artist-button") {
-      img.src = "Assets/artist-logo-selected.png"
-    }
-    this.classList.add("option-selected")
-  }
-
-  function setOptionUnselected() {
-    let img = this.children[1]
-    if (this.id === "student-button") {
-      img.src = "Assets/graduation-cap-logo.png"
-    } else if (this.id === "dev-button") {
-      img.src = "Assets/computer-logo.png"
-    } else if (this.id === "artist-button") {
-      img.src = "Assets/artist-logo.png"
-    }
-    this.classList.remove("option-selected")
   }
 
   function hideAllPages() {
