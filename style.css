@@ -44,9 +44,6 @@ nav a {
   color: black;
 }
 
-/*
-  Front page
- */
 #greeting {
   height: 480px;
   display: flex;
@@ -60,9 +57,28 @@ h1 {
   margin-bottom: 20px;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.contact-block {
+  margin-bottom: 10px;
+}
+.contact-block img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contact-block a {
+  color: white;
+}
+
 #logoBG {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: #800913;
   width: 100%;
   height: 350px;
@@ -116,9 +132,7 @@ h1 {
 }
 
 .content {
-  padding-left: 80px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 80px 50px 80px;
 }
 
 #education {
@@ -220,9 +234,8 @@ h1 {
   padding-bottom: 70px;
 }
 
-#art h3 {
+#art h4 {
   text-align: center;
-  margin-top: 20px;
 }
 
 #carousel {
@@ -241,4 +254,10 @@ h1 {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  height: 40px;
 }
